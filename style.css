@@ -12,7 +12,18 @@ body, input {
 }
 
 p {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+a {
+    font-weight: 600;
+    color: #535151;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0020ad;
 }
 
 main {
@@ -207,8 +218,7 @@ input:focus {
 
     form {
         max-width: 380px;
-        display: flex;
-        flex-direction: column;
+
         align-items: center;
     }
 
@@ -218,3 +228,24 @@ input:focus {
 
 }
 
+@media (max-width: 480px) {
+    .rows {
+        margin-bottom: 0rem;
+        flex-direction: column;
+        height: auto;
+   
+    }
+    label {
+        margin-bottom: 0.75rem;
+        width: 100%;
+        max-width: 12rem;
+    
+    }
+
+    input {
+        margin-bottom: 2.1rem;
+        width: 100%;
+        max-width: 16rem;
+    
+    }
+}
